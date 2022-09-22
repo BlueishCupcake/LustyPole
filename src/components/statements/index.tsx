@@ -1,17 +1,32 @@
+import { Carousel } from "react-responsive-carousel";
+
+import { statements } from "helpers/statements";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import * as S from "./style";
 
 export const Statements: React.FC = () => {
   return (
-    <S.StatementsBody>
-      <h2>O que estão dizendo sobre nós</h2>
-      <S.Statement>
-        "A Lusty é minha segunda casa! Um dos estúdios mais capacitados que
-        conheci até hoje e tive o prazer de acompanhar o desenvolvimento! Profes
-        incríveis que irão auxiliar todos de acordo com seus níveis! Eu amo essa
-        família." ❤
-      </S.Statement>
+    <>
+      <S.StatementH2>O que estão dizendo sobre nós</S.StatementH2>
+      <Carousel
+        infiniteLoop
+        autoPlay
+        dynamicHeight
+        interval={10000}
+        showStatus={false}
+        showIndicators={false}
+      >
+        {statements.map((statement) => {
+          return (
+            <S.StatementsBody key={statement.id}>
+              <S.Statement>{statement.text}</S.Statement>
 
-      <S.Author>Vanessa Fleig</S.Author>
-    </S.StatementsBody>
+              <S.Author>{statement.author}</S.Author>
+            </S.StatementsBody>
+          );
+        })}
+      </Carousel>
+    </>
   );
 };

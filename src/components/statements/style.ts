@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const StatementH2 = styled.h2`
+  text-align: center;
+  margin-top: 40px;
+`;
+
 export const StatementsBody = styled.section`
   width: 680px;
   height: 600px;
