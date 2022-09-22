@@ -6,6 +6,10 @@ export const Headers = styled.header`
   display: flex;
   place-items: space-between;
   place-content: end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 `;
 
 export const LinksWrapper = styled.div`
