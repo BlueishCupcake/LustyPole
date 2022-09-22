@@ -2,7 +2,7 @@ import * as S from "./style";
 
 export const Header: React.FC = () => {
   return (
-    <S.Headers>
+    <S.Headers id="header">
       <S.LinksWrapper>
         <S.Links>Home</S.Links>
         <S.Links>Matrículas</S.Links>

@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html:root {
   --white: hsl(45, 2%, 90%);
   --grey: hsl(0, 0%, 80%);
