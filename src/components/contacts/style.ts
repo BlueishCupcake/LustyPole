@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ContactsSection = styled.section`
   background-color: var(--grey);
   height: 760px;
-  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: wrap;
@@ -42,6 +41,7 @@ export const Links = styled.a`
   width: 360px;
   padding: 16px;
   display: flex;
+  place-content: center;
 
   cursor: pointer;
   text-decoration: none;
@@ -50,8 +50,7 @@ export const Links = styled.a`
   transition: 0.3s;
 
   &:hover {
-    box-shadow: 0 0.5em 1em var(--pink);
-    transform: translateY(-0.5em);
+    box-shadow: 1px 1px 6px var(--pink);
   }
 `;
 

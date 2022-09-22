@@ -30,7 +30,7 @@ export const GoBack = styled.a`
   background-color: transparent;
   position: absolute;
   bottom: 20px;
-  right: 240px;
+  right: 40px;
   font-size: 16px;
   padding: 12px;
   border-radius: 4px;
@@ -46,8 +46,9 @@ export const GoBack = styled.a`
 
 export const Arrow = styled.img`
   position: absolute;
-  bottom: 6px;
+  bottom: 2px;
   right: 130px;
+  background-color: var(--white);
   border: 1px solid var(--white);
   border-radius: 50%;
   padding: 4px;
