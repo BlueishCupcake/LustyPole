@@ -15,8 +15,8 @@ export const Headers = styled.header`
 export const LinksWrapper = styled.div`
   display: flex;
   place-content: space-between;
-  width: 400px;
-  padding: 24px 240px 0 0;
+  place-items: center;
+  padding: 0 240px 0 0;
 `;
 
 export const Links = styled.a`
@@ -24,8 +24,9 @@ export const Links = styled.a`
   line-height: 50px;
   text-align: center;
   cursor: pointer;
+  padding: 24px;
 
-  transition: 0.4s;
+  transition: color 0.3s;
 
   &:hover {
     color: var(--pink);

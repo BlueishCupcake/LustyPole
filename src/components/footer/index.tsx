@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           Rua Lopo Gonçalves, 677 - Cidade Baixa | Porto Alegre - RS
         </S.Span>
       </S.SpanWrapper>
-      <S.GoBack href="#header">
+      <S.GoBack href="#group-photo">
         Voltar ao inicio
         <S.Arrow src="arrow-up.svg" />
       </S.GoBack>

@@ -2,7 +2,7 @@ import * as S from "./style";
 
 export const GroupSection: React.FC = () => {
   return (
-    <S.GroupContainer>
+    <S.GroupContainer id="group-photo">
       <S.GroupText>
         Transformamos vidas permitindo às pessoas explorarem o Pole Dance em um
         ambiente aconchegante e acolhedor.

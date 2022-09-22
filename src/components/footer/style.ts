@@ -36,7 +36,7 @@ export const GoBack = styled.a`
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s;
   text-decoration: none;
 
   &:hover {
