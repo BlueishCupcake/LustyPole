@@ -1,12 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Calender } from "./calender";
 import { Home } from "./home";
+import { Register } from "./register";
+import { Calender } from "./calender";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/matriculas",
+    element: <Register />,
   },
   {
     path: "/calendario",
