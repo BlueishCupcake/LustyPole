@@ -3,7 +3,9 @@ import * as S from "./style";
 export const Contacts: React.FC = () => {
   return (
     <S.ContactsSection>
-      <S.PostsWrapper></S.PostsWrapper>
+      <S.PostsWrapper>
+        <S.PoleDancer src="poledancer.png" />
+      </S.PostsWrapper>
 
       <S.ContactsWrapper>
         <S.ContactsInfoWrapper>

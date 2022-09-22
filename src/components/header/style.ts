@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type LinksTypes = {
+  isActive: boolean;
+};
+
 export const Headers = styled.header`
   height: 80px;
   background-color: var(--white);
@@ -20,19 +24,26 @@ export const LinksWrapper = styled.div`
   padding: 0 240px 0 0;
 `;
 
-export const Links = styled.span`
+export const Links = styled.span<LinksTypes>`
+  display: flex;
+
   > a {
-    color: var(--black);
+    display: flex;
+    color: ${({ isActive }) => (isActive ? `var(--white)` : `var(--black)`)};
+    background-color: ${({ isActive }) =>
+      isActive ? `var(--pink)` : `transparent`};
+
     line-height: 50px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
     padding: 24px;
 
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 
     &:hover {
-      color: var(--pink);
+      color: ${({ isActive }) => (isActive ? `var(--black)` : `var(--pink)`)};
     }
   }
 `;

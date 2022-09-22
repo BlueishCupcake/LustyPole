@@ -10,6 +10,11 @@ export const ContactsSection = styled.section`
 
 export const PostsWrapper = styled.div`
   width: 100%;
+  display: flex;
+`;
+
+export const PoleDancer = styled.img`
+  margin: 0 auto;
 `;
 
 export const ContactsWrapper = styled.div`

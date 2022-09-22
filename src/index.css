@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html:root {
   --white: hsl(45, 2%, 90%);
   --grey: hsl(0, 0%, 80%);
