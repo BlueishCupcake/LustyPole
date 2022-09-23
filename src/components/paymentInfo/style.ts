@@ -63,12 +63,13 @@ export const InstructionsBody = styled.div`
 `;
 
 export const CardsWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  padding: 0px 80px;
 `;
 
 export const InfoCard = styled.div`
-  width: 480px;
   height: 240px;
   margin: 20px 80px;
 `;
