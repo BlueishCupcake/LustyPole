@@ -70,7 +70,6 @@ export const CardsWrapper = styled.div`
 `;
 
 export const InfoCard = styled.div`
-  height: 240px;
   margin: 20px 80px;
 `;
 
