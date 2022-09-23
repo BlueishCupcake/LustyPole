@@ -4,6 +4,7 @@ import { Home } from "./home";
 import { Register } from "./register";
 import { Calender } from "./calender";
 import { Payment } from "./payment";
+import { About } from "./about";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/precos",
     element: <Payment />,
+  },
+  {
+    path: "/quem-somos",
+    element: <About />,
   },
 ]);
 
