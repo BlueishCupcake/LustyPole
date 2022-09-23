@@ -5,10 +5,6 @@ import * as S from "./style";
 export const Header: React.FC = () => {
   const location = useLocation();
 
-  let isActive = false;
-
-  console.log("pathname", location.pathname);
-
   return (
     <S.Headers>
       <S.LinksWrapper>

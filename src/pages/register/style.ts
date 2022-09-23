@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const RegisterBody = styled.div`
-  height: 100vh;
-  background-color: var(--pink);
+  height: 80vh;
+  overflow: hidden;
+  background-color: var(--grey);
   display: flex;
   place-content: center;
   place-items: center;

@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./home";
 import { Register } from "./register";
 import { Calender } from "./calender";
+import { Payment } from "./payment";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/calendario",
     element: <Calender />,
+  },
+  {
+    path: "/precos",
+    element: <Payment />,
   },
 ]);
 
