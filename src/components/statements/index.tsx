@@ -16,6 +16,7 @@ export const Statements: React.FC = () => {
         interval={10000}
         showStatus={false}
         showIndicators={false}
+        swipeable={false}
       >
         {statements.map((statement) => {
           return (
