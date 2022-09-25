@@ -18,6 +18,11 @@ export const PaymentInfoBody = styled.div`
   display: flex;
   flex-direction: column;
   place-items: center;
+
+  @media (max-width: 810px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const PricesBody = styled.div`
@@ -25,6 +30,10 @@ export const PricesBody = styled.div`
   display: flex;
   flex-direction: column;
   place-items: center;
+
+  @media (max-width: 810px) {
+    width: 100%;
+  }
 `;
 
 export const PriceInfoWrapper = styled.div`
@@ -32,7 +41,6 @@ export const PriceInfoWrapper = styled.div`
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 24px;
-  /* width: 408px; */
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -67,6 +75,14 @@ export const CardsWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
   padding: 0px 80px;
+
+  @media (max-width: 810px) {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    gap: 40px;
+  }
 `;
 
 export const InfoCard = styled.div`

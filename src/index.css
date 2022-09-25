@@ -27,7 +27,7 @@ html:root {
   --pink: hsl(334, 50%, 70%);
 }
 
-.little-buddy {
+.top {
   position: absolute;
   top: 0;
   left: 0;

@@ -5,8 +5,6 @@ export const Footers = styled.footer`
   height: 200px;
   width: 100%;
   position: relative;
-  bottom: 0;
-  right: 0;
   display: flex;
   place-content: center;
   place-items: center;

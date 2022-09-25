@@ -3,7 +3,7 @@ import { Footer } from "./components/footer";
 function App() {
   return (
     <>
-      <p id="little-buddy" className="little-buddy">
+      <p id="top" className="top">
         Âncora do site, favor não mexer!
       </p>
       <Routes />
