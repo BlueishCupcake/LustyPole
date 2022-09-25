@@ -9,6 +9,6 @@ export const CalendarsWrapper = styled.div`
 `;
 
 export const CalendarImg = styled.img`
-  /* width: 1400px; */
+  max-width: 100%;
   margin: 0 auto 100px;
 `;
