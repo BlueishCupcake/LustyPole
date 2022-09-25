@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutBody = styled.div`
-  height: 250vh;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -9,12 +8,16 @@ export const AboutBody = styled.div`
 `;
 
 export const HistorySection = styled.section`
-  height: 520px;
   width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  @media (max-width: 810px) {
+    width: 100%;
+    padding: 0 12px;
+  }
 `;
 
 export const PhotoSection = styled.section`
@@ -22,8 +25,11 @@ export const PhotoSection = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: beige;
   margin: 0 auto;
+
+  @media (max-width: 810px) {
+    display: none;
+  }
 `;
 
 export const Photo = styled.img`
@@ -31,27 +37,38 @@ export const Photo = styled.img`
 `;
 
 export const WorkSection = styled.section`
-  height: 520px;
   display: flex;
   flex-direction: column;
   background-color: var(--grey);
   margin: 0 auto;
   place-content: center;
   padding: 0 540px;
+
+  @media (max-width: 810px) {
+    width: 100%;
+    padding: 0 12px;
+  }
 `;
 
 export const VideoSection = styled.section`
   display: flex;
   flex-flow: column;
   place-items: center;
-  height: 840px;
   background-color: var(--grey);
+
+  @media (max-width: 810px) {
+    width: 100%;
+  }
 `;
 
 export const Video = styled.iframe`
   width: 100%;
   margin-top: 32px;
   height: 800px;
+
+  @media (max-width: 810px) {
+    height: 400px;
+  }
 `;
 
 export const Title = styled.h2`
