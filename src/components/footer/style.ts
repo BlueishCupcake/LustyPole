@@ -42,6 +42,17 @@ export const GoBack = styled.a`
   &:hover {
     color: var(--pink);
   }
+
+  @media (max-width: 440px) {
+    font-size: 12px;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (min-width: 441px) and (max-width: 810px) {
+    bottom: 0;
+    right: 0;
+  }
 `;
 
 export const Arrow = styled.img`
@@ -52,4 +63,18 @@ export const Arrow = styled.img`
   border: 1px solid var(--white);
   border-radius: 50%;
   padding: 4px;
+
+  @media (max-width: 440px) {
+    bottom: 4px;
+    right: 96px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    width: 32px;
+  }
+
+  @media (min-width: 441px) and (max-width: 810px) {
+    bottom: 4px;
+    right: 124px;
+    width: 32px;
+  }
 `;

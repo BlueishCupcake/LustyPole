@@ -32,7 +32,7 @@ export const PriceInfoWrapper = styled.div`
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 24px;
-  width: 408px;
+  /* width: 408px; */
   display: flex;
   flex-direction: column;
   place-items: center;

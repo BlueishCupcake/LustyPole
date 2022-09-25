@@ -6,7 +6,6 @@ export const StatementH2 = styled.h2`
 `;
 
 export const StatementsBody = styled.section`
-  width: 680px;
   height: 600px;
   margin: 0 auto;
 
@@ -14,6 +13,10 @@ export const StatementsBody = styled.section`
   flex-direction: column;
   place-items: center;
   place-content: center;
+
+  @media (max-width: 440px) {
+    height: 1400px;
+  }
 `;
 
 export const Statement = styled.p`

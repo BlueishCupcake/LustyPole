@@ -2,19 +2,28 @@ import styled from "styled-components";
 
 export const ContactsSection = styled.section`
   background-color: var(--grey);
-  height: 760px;
   margin: 0 auto;
   display: flex;
   flex-direction: wrap;
+
+  @media (max-width: 440px) {
+    flex-flow: column;
+  }
 `;
 
 export const PostsWrapper = styled.div`
   width: 100%;
   display: flex;
+  place-content: center;
+  place-items: center;
 `;
 
 export const PoleDancer = styled.img`
-  margin: 0 auto;
+  max-width: 100%;
+
+  @media (max-width: 440px) {
+    display: none;
+  }
 `;
 
 export const ContactsWrapper = styled.div`
@@ -24,7 +33,6 @@ export const ContactsWrapper = styled.div`
 `;
 
 export const ContactsInfoWrapper = styled.div`
-  height: 50%;
   display: flex;
   flex-flow: column wrap;
   place-content: center;
@@ -43,7 +51,6 @@ export const BtnWrapper = styled.div`
 `;
 
 export const Links = styled.a`
-  width: 360px;
   padding: 16px;
   display: flex;
   place-content: center;
@@ -61,6 +68,10 @@ export const Links = styled.a`
 
 export const ContactText = styled.span`
   padding-left: 8px;
+
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 `;
 
 export const SocialMediaWrapper = styled.div`
@@ -69,4 +80,5 @@ export const SocialMediaWrapper = styled.div`
   flex-flow: column wrap;
   place-content: center;
   place-items: center;
+  padding: 12px 0;
 `;

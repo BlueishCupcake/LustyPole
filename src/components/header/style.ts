@@ -15,6 +15,17 @@ export const Headers = styled.header`
   left: 0;
   width: 100%;
   z-index: 1;
+
+  @media (max-width: 440px) {
+    place-content: flex-start;
+    place-items: flex-start;
+    flex-flow: column wrap;
+    height: 44px;
+  }
+
+  @media (min-width: 441px) and (max-width: 810px) {
+    height: 60px;
+  }
 `;
 
 export const LinksWrapper = styled.div`
@@ -22,6 +33,20 @@ export const LinksWrapper = styled.div`
   place-content: space-between;
   place-items: center;
   padding: 0 240px 0 0;
+
+  @media (max-width: 440px) {
+    place-content: flex-start;
+    place-items: flex-start;
+    flex-flow: column wrap;
+    height: 44px;
+    padding: 0;
+  }
+
+  @media (min-width: 441px) and (max-width: 810px) {
+    height: 44px;
+    place-content: center;
+    place-items: center;
+  }
 `;
 
 export const Links = styled.span<LinksTypes>`
@@ -44,6 +69,20 @@ export const Links = styled.span<LinksTypes>`
 
     &:hover {
       color: ${({ isActive }) => (isActive ? `var(--black)` : `var(--pink)`)};
+    }
+    @media (max-width: 440px) {
+      padding: 0 8px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+      padding: 0 4px;
+      font-size: 14px;
+    }
+
+    @media (min-width: 441px) and (max-width: 810px) {
+      padding: 20px;
+      font-size: 16px;
     }
   }
 `;
