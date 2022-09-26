@@ -13,7 +13,7 @@ export const Prices: React.FC = () => {
             <S.PriceInfoWrapper key={priceInfo.id}>
               <S.PriceInfoText>{priceInfo.title}</S.PriceInfoText>
 
-              <S.Price>{priceInfo.price}</S.Price>
+              <S.Price>R${priceInfo.price}</S.Price>
 
               <S.PriceInfoText>{priceInfo.limitation}</S.PriceInfoText>
             </S.PriceInfoWrapper>
